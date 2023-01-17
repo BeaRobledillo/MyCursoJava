@@ -1,18 +1,20 @@
 public class Producto {
     private String title;
-    private Integer num;
+    private int reference;
     private Double cost;
     private String description;
 
-    private Manufacturer manufacturer;
+    //private Manufacturer manufacturer;
     public Producto() {
     }
 
-    public Producto(String title, Integer num, Double cost, String description) {
+
+    public Producto(String title, int reference, Double cost, String description) {
         this.title = title;
-        this.num = num;
+        this.reference = reference;
         this.cost = cost;
         this.description = description;
+        //this.manufacturer = manufacturer;
     }
 
     public String getTitle() {
@@ -23,12 +25,12 @@ public class Producto {
         this.title = title;
     }
 
-    public Integer getNum() {
-        return num;
+    public int getReference() {
+        return reference;
     }
 
-    public void setNum(Integer num) {
-        this.num = num;
+    public void setReference(int reference) {
+        this.reference = reference;
     }
 
     public Double getCost() {
@@ -47,22 +49,22 @@ public class Producto {
         this.description = description;
     }
 
-    public Manufacturer getManufacturer() {
+    /*public Manufacturer getManufacturer() {
         return manufacturer;
     }
 
     public void setManufacturer(Manufacturer manufacturer) {
         this.manufacturer = manufacturer;
-    }
+    }*/
 
     @Override
     public String toString() {
         return "Producto: " +
                 " Title => '" + title + '\'' +
-                ", Num => " + num +
+                ", Num => " + reference +
                 ", Cost => " + cost +
                 ", Description => " + description +
-                ", manufacturer=" + manufacturer +
+                //", manufacturer=" + manufacturer +
                 '}';
     }
 }
