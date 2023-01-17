@@ -18,3 +18,4 @@
 
 * Crear una clase Manufacturer
 	* Asociar la clase a Product, de manera que un producto tiene un fabricante
+    * Crear enum ProductCategory para categorías de producto y agregarla como atributo a la clase Product
