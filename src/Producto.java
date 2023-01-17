@@ -1,14 +1,18 @@
+//Crear una clase: Product
 public class Producto {
+    //atributos encapsulados (private)
     private String title;
     private int reference;
     private Double cost;
     private String description;
 
     //private Manufacturer manufacturer;
+    //constructores
+    //vacio
     public Producto() {
     }
 
-
+    //con todos los parámetros
     public Producto(String title, int reference, Double cost, String description) {
         this.title = title;
         this.reference = reference;
@@ -16,7 +20,7 @@ public class Producto {
         this.description = description;
         //this.manufacturer = manufacturer;
     }
-
+    //métodos getter setter
     public String getTitle() {
         return title;
     }
@@ -56,7 +60,7 @@ public class Producto {
     public void setManufacturer(Manufacturer manufacturer) {
         this.manufacturer = manufacturer;
     }*/
-
+    //método toString
     @Override
     public String toString() {
         return "Producto: " +
