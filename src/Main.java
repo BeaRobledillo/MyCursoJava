@@ -23,7 +23,25 @@ public class Main {
 
         //Estadísticas
         //Calcular la suma precio total de los productos del array
+        Double totalCost = 0d;
+        for (Producto product : arrayDeProductos) {
+            totalCost += product.getCost();
+        }
+        System.out.println("Estadísticas:");
+        System.out.println("Suma del precio total de los productos:"+totalCost);
+
         //Calcular la media de precio de los productos del array
+        double averageCost = totalCost / arrayDeProductos.length;
+        System.out.println("La media de precio de los productos: " + averageCost);
+
         //Calcular el precio máximo
+        Double maxCost = arrayDeProductos[0].getCost();
+        for (Producto arrayDeProducto : arrayDeProductos) {
+            if (arrayDeProducto.getCost() > maxCost) {
+                maxCost = arrayDeProducto.getCost();
+            }
+        }
+        System.out.println("El precio máximo: " + maxCost);
     }
+
 }
