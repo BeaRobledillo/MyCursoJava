@@ -18,4 +18,9 @@
 
 * Crear una clase Manufacturer
 	* Asociar la clase a Product, de manera que un producto tiene un fabricante
+  
     * Crear enum ProductCategory para categorías de producto y agregarla como atributo a la clase Product
+  
+    * Crear atributo boolean en Product para indicar si un producto está a la venta o no, es decir,
+		si está activado. Influye en las estadísticas, si un producto no está activado entonces no se
+		debe usar para calcular el precio total ni la media ni el max.
